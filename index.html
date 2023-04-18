@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <img src="/images/bg-main-desktop.png" alt="background" />
+    <div class="container_cards">
+      <img src="/images/bg-card-front.png" alt="card-front" />
+      <img
+        src="/images/bg-card-back.png"
+        alt="card-back"
+        class="card_back"
+      /><span class="cvc" id="c_vc">000</span>
+
+      <img src="/images/card-logo.svg" alt="card-logo" class="card_logo" />
+
+      <div class="information">
+        <span class="card_number" id="numbers">0000 0000 0000 0000</span>
+        <div class="container_name">
+          <span id="nom">JANE APPLESEED </span>
+          <div class="mes_year">
+            <span id="mes_">00/</span> <span id="year_">00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container_form">
+      <form action="#" name="Formulario" method="post">
+        <p>Cardholder Name</p>
+        <input
+          type="text"
+          placeholder="e.g. Jane Appleseed"
+          name="Name"
+          maxlength="20"
+          class="principal"
+          id="name"
+          onkeypress="return valideKey_number(event)"
+        />
+        <p>Card Number</p>
+        <div>
+          <input
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            name="Number"
+            maxlength="19"
+            class="principal"
+            id="card_number"
+          />
+          <div id="warnings" class="warning"></div>
+        </div>
+        <p>Exp. Date (MM/YY) MM YY CVC</p>
+        <div class="container_input">
+          <!-- input del mes -->
+          <input
+            type="text"
+            maxlength="2"
+            name="Month"
+            placeholder="MM"
+            class="secundari"
+            id="month"
+            onkeypress="return valideKey(event)"
+          />
+          <!-- input del año -->
+          <input
+            type="text"
+            maxlength="2"
+            name="Year"
+            placeholder="YY"
+            class="secundari"
+            id="year"
+            onkeypress="return valideKey(event)"
+          />
+          <!-- input de la clave CVC -->
+          <input
+            type="text"
+            maxlength="3"
+            name="CVC"
+            placeholder="e.g. 123"
+            class="secundari_1"
+            id="cvc"
+            onkeypress="return valideKey(event)"
+          />
+        </div>
+        <!-- Contenedor de los warnings -->
+        <div class="container_warnings">
+          <div id="warnings_2" class="warning oto_2"></div>
+          <div id="warnings_3" class="warning oto_3"></div>
+          <div id="warnings_4" class="warning oto_4"></div>
+        </div>
+        <!-- Contenedor de button -->
+        <div class="container_button">
+          <button>Confirm</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Completed state start -->
+
+    <div class="completed_form disable" id="Thankyou">
+      <img
+        src="/images/icon-complete.svg"
+        alt="icon-complete"
+        class="imgComplete"
+      />
+      <div class="thank">THANK YOU!</div>
+      <div class="descrip">We've added your card details Continue</div>
+      <button id="continue_btn">Continue</button>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Mateo Parra Ledesma</a>.
+    </div>
+    <script src="validation.js"></script>
+  </body>
+</html>

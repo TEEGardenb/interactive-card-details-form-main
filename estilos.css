@@ -1,0 +1,211 @@
+* {
+  font-style: none;
+  list-style: none;
+  margin: 0px;
+}
+
+body {
+  /*background-color: black;*/
+}
+
+.container_cards {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  gap: 40px;
+  align-items: center;
+  align-content: flex-end;
+}
+
+.information {
+  position: absolute;
+  top: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+span.card_number {
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 30px;
+}
+
+img.card_logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(278, 68%, 11%);
+  font-weight: 300;
+}
+
+p.text {
+  color: hsl(0, 0%, 100%);
+}
+
+input {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+
+  font-weight: 300;
+  border: solid;
+  border-color: rgba(0, 0, 0, 10%);
+}
+
+input.principal {
+  border-radius: 8px;
+  width: 380px;
+  height: 45px;
+}
+
+input.secundari {
+  border-radius: 5px;
+  width: 75px;
+  height: 45px;
+}
+
+input.secundari_1 {
+  border-radius: 5px;
+  width: 190px;
+  height: 45px;
+}
+
+button {
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  border: 0px;
+  width: 390px;
+  height: 55px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 150px;
+  left: 800px;
+  gap: 12px;
+}
+
+.container_input {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.card_back {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 20%;
+}
+
+.container_name {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+.cvc {
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 75%;
+  left: 100%;
+}
+
+.warning {
+  color: red;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  display: flex;
+  gap: 108px;
+}
+
+.container_warnings {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 300px;
+}
+
+.mes_year {
+  display: flex;
+}
+
+.card_number__ {
+  position: absolute;
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 30px;
+
+  top: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.completed_form {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+img.imgComplete {
+  width: 84px;
+}
+
+.disable {
+  display: none;
+}
+
+.thank {
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(278, 68%, 11%);
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.descrip {
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(279, 6%, 55%);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.oto_2 {
+  position: absolute;
+  top: 79%;
+}
+
+.oto_3 {
+  position: absolute;
+  top: 79%;
+  left: 25%;
+}
+
+.oto_4 {
+  position: absolute;
+  top: 79%;
+  left: 49%;
+}
